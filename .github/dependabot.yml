@@ -1,0 +1,41 @@
+# Dependabot updates: weekly (Monday, Europe/Berlin), max 5 open version-update PRs per entry.
+# Minor and patch bumps are grouped per ecosystem; majors open as individual PRs.
+# Security updates are grouped into one <ecosystem>-security PR per ecosystem entry and
+# are not limited by open-pull-requests-limit.
+version: 2
+updates:
+  # package.json + package-lock.json.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+      npm-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+  # Dockerfile (cloudflare/sandbox).
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 5
+    groups:
+      docker-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+      docker-security:
+        applies-to: security-updates
+        patterns:
+          - "*"

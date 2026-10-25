@@ -16,25 +16,25 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@cloudflare/puppeteer": "^1.0.5",
-    "hono": "^4.11.6",
-    "jose": "^6.0.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@cloudflare/puppeteer": "^1.4.0",
+    "hono": "^4.13.13",
+    "jose": "^6.2.13",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@cloudflare/sandbox": "*",
-    "@cloudflare/vite-plugin": "^1.0.0",
+    "@cloudflare/vite-plugin": "^1.64.0",
     "@cloudflare/workers-types": "^4.20250109.0",
     "@types/node": "^22.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^4.3.0",
     "@vitest/coverage-v8": "^4.0.18",
     "typescript": "^5.9.3",
     "vite": "^6.0.0",
     "vitest": "^4.0.18",
-    "wrangler": "^4.50.0"
+    "wrangler": "^4.151.3"
   },
   "author": "",
   "license": "MIT",
